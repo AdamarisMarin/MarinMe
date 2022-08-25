@@ -14,6 +14,9 @@
  * Html
  * Css
 
+## ¿En que me gustaría especializarme en un futuro? 
+Base de datos
+
  ## **Tecnologías o lenguajes que me gustaría aprender**
  1. Php
  2. Javascript
