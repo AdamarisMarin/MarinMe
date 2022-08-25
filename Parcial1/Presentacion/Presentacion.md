@@ -6,7 +6,7 @@
 | ------------------ | ----------------------------: |
 | Educación primaria | Antonio Eleodoro Velez Castro | 
 | Educación secundaria | Roberto Benavides Arredondo |
-| Educación media superior | Conalep 234 |
+| Educación media superior | Conalep 246 |
 
 ## **Lenguajes de programación** 
  * C++
