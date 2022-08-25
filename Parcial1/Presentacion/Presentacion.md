@@ -14,7 +14,7 @@
  * Html
  * Css
 
-## ¿En que me gustaría especializarme en un futuro? 
+## **¿En que me gustaría especializarme en un futuro?** 
 Base de datos
 
  ## **Tecnologías o lenguajes que me gustaría aprender**
