@@ -14,16 +14,14 @@ ul > li > ul {
     display: none;
 }
 
-ul > li.hover > ul {
+ul > li.hover > ul { 
     display: block;
     height: 100%;
 }
-
 .opcion {
-    background: blue;
+    background: pink;
     color: white;
 }
-
 .subOpcion {
     padding-left: 20px;
     background: gray;
