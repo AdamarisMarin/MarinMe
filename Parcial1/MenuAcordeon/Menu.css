@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 200vh;
+    height: 195vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,9 +27,10 @@ ul > li:hover > ul {
     height: 100%;
 }
 .opcion {
-    color: 	white;
+    color: white;
     font-size: 25px;
     font-family: Arial Black;
+    border-bottom: 3px solid rgba(199, 69, 69, 0.863);
 }
 .subOpcion {
     padding-left: 10px;
@@ -37,9 +38,6 @@ ul > li:hover > ul {
     color: black;
     font-size: 20px;
     font-family: monospace;
-}
-
-li{
     transition: .7s;
 }
 
@@ -55,4 +53,19 @@ li:hover {background-color: rgba(146, 212, 250, 0.644);}
 
 #Opcion3{
     background: rgb(238, 128, 101);
+}
+
+h1{
+    font-size: 30px;
+    font-family: Verdana;
+    color: white;
+    padding: 1px;
+    background-color: rgba(219, 106, 106, 0.534);
+    line-height:1.3;
+    text-align: center;
+}
+
+#icono{
+    color:black;
+    padding: 9px;
 }
