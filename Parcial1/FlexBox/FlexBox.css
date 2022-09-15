@@ -8,23 +8,26 @@
     width: 100vw;
     height: 100vh;
     background-color: #e0b0ff;
-    display:flex;
+    display:flex; /*Mueve las cajas en horizontal*/
     flex-direction: now;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 5px; /*Separa los cuadros*/
 }
 
 .caja{
     background-color: aqua;
     color:blueviolet;
     border: 2px solid black;
-    width: 100px;
-    height: 100px;
+    width: 367px;
+    height: 507px;
     margin: 2px;        
     border-radius: 10px;   
     text-align: center;
     font-size: 22px;
+    line-height: 100px; /*Acentra el texto*/
+   
 }
 
 /*#caja1{flex-grow: 1;}
