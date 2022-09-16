@@ -21,5 +21,5 @@
 | order | Número (peso) que indica el orden de aparición de los ítems | 0 (**Number**) |
 | row-gap | Espacio entre filas (sólo si flex-direction: column) | normal (**size**) |
 | column-gap | Espacio entre columnas (sólo si flex-direction: row) | normal (**size**) |
-|
+
 
