@@ -33,7 +33,7 @@
     font-size: 20px; 
     font-family: Arial;
     padding: 15px 18px;
-    text-align: justify;
+    text-align: center;
 }
 #caja4{ 
     grid-area: columna2; 
@@ -94,9 +94,67 @@ img{
     margin-bottom: 10px;
 }
 
+p{text-align: justify;}
+
 h1{
     font-size: 30px;
     font-family: serif;
     color: #744c24;  
+    display: inline-block;
+    position: relative;   
 }
 
+h1::after,h1::before{
+    content: '';
+    position:absolute;
+    background-color: #925110;
+    top: 0.6em;
+    width: 291px;
+    height: 3px;
+}
+
+h3{
+    font-size: 30px;
+    font-family: serif;
+    color: #744c24;  
+    display: inline-block;
+    position: relative;   
+}
+
+h3::after,h3::before{
+    content: '';
+    position:absolute;
+    background-color: #925110;
+    top: 0.6em;
+    width: 275px;
+    height: 3px;
+}
+
+h4{
+    font-size: 30px;
+    font-family: serif;
+    color: #744c24;  
+    display: inline-block;
+    position: relative;   
+}
+
+h4::after,h4::before{
+    content: '';
+    position:absolute;
+    background-color: #925110;
+    top: 0.6em;
+    width: 300px;
+    height: 3px;
+}
+
+h1::before{left:230px;}
+
+h1::after{right:230px;}
+
+h3::before{left:270px;}
+
+h3::after{right:270px;}
+
+h4::before{left:214px;}
+
+h4::after{right:214px;}
