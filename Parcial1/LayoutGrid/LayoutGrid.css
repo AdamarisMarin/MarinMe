@@ -61,12 +61,12 @@
 
 .caja span:hover{filter: contrast(250%);}
 
-.caja span:nth-child(1){ color:#001B7E;}
-.caja span:nth-child(2){ color:#0B4AF9;}
-.caja span:nth-child(3){ color:#34a8c2;}
-.caja span:nth-child(4){ color:#586AE2;}
-.caja span:nth-child(5){ color: #3d3283;}
-.caja span:nth-child(6){ color: #36CACC;}
+.caja span:nth-child(1){ color:#0028ff;}
+.caja span:nth-child(2){ color:#527ff8;}
+.caja span:nth-child(3){ color:#3167da;}
+.caja span:nth-child(4){ color:#5268f8;}
+.caja span:nth-child(5){ color: #4790d4;}
+.caja span:nth-child(6){ color: #01c4e7;}
 .caja span:nth-child(7){ color: #920d7c;}
 .caja span:nth-child(8){ color: #ED006C;}
 .caja span:nth-child(9){ color: #983CB8;}
@@ -89,14 +89,33 @@
 }
 #caja5{grid-area: piepagina; padding: 20px 10px;}
 
-h1{
+/*h1{
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}*/
+
+.neon1{    
     font-size: 37px;
-    color:#ff0697;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #ff0697,
+    0 0 25px #ff0697,
+    0 0 50px #ff0697,
+    0 0 100px #ff0697; 
+    letter-spacing: 5px;
+    cursor:pointer;    
+    transition: 1s;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#caja5 h1{color:aquamarine;}
+#caja5 h1{
+    text-shadow: 0 0 5px aquamarine,
+    0 0 25px aquamarine,
+    0 0 50px aquamarine,
+    0 0 100px aquamarine;
+}
 
 @media screen and (max-width: 900px){
 .contenedor{
