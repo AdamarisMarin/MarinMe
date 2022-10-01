@@ -105,13 +105,12 @@ width: 100%;}
 
 header{
     text-align: center;
-    background-color: #fdfd96;
-    font-size: 50px;
+    font-size: 57px;
     font-family: Brush Script MT;
     color: rgb(134, 75, 134);    
     height: 120px;
     line-height: 120px;
-   /* background-image: Url(Cabecera3.jpg);*/ 
+    background-image: Url(Cabecera1.png);
     background-repeat: repeat;
 }
 
@@ -128,7 +127,8 @@ a{color: #4b1c71;}
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
-        height: 56px;
+        height: 60px;
+        padding: 5px;
 }
 
 div.content{
