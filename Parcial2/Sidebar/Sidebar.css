@@ -128,7 +128,7 @@ a{color: #4b1c71;}
         flex-direction: row;
         width: 100%;
         height: 60px;
-        padding: 5px;
+        padding: 1px 5px;
 }
 
 div.content{
