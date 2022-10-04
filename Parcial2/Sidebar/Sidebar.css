@@ -23,7 +23,7 @@ div.sidebar{
 a{
     display:block;
     text-decoration: none;
-    padding: 5px;
+    padding: 12px 5px;
 }
 
 a:hover{
