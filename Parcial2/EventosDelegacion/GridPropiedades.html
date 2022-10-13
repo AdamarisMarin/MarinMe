@@ -35,10 +35,23 @@
     </div>    
     <div id="caja4" class="caja">El mejor lugar para disfrutar tu café</div> 
     <div id="caja5" class="caja">Derechos Reservados | EL Molino © 2022 | WhatsApp:+522556949</div> 
-    </div>
-   
+    </div>   
     <script type="text/javascript">
-     const contenedor = document.querySelector(".contenedor");
+     var elem = document.getElementById("cont");
+        elem.addEventListener("click", cambiarCaja);
+        function cambiarCaja(evento)
+        {
+            console.log(evento);
+            if(document.getElementById(evento.target.id).classList.contains("caja"))
+            {
+                document.getElementById(evento.target.id).classList.toggle("caja");
+            }          
+            if(evento.target.id=="caja2")
+            {
+                elem.removeEventListener("click",cambiarCaja);
+            }
+        }
+     /*const contenedor = document.querySelector(".contenedor");
         contenedor.addEventListener("click", (e) => {
         if(e.target.id === "caja1"){
             console.log("Click en la caja 1");
@@ -56,8 +69,7 @@
         if(e.target.id === "caja5"){
             console.log("Click en la caja 5");
         }
-    });            
-
+    });*/  
     </script>
 </body> 
 </html>
