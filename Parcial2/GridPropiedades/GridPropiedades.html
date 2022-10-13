@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento delegacion</title>
+    <link rel="stylesheet" href="GridPropiedades.css">
+    <script src="https://kit.fontawesome.com/7bd2742ede.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="cont" class="contenedor">
+    <div id="caja1" class="caja">
+        <a href="#"><i class="fa-solid fa-house" id="icono"></i>Inicio</a>
+        <a href="#"><i class="fa-solid fa-bars" id="icono"></i>Menú</a>
+        <a href="#"><i class="fa-solid fa-location-dot" id="icono"></i>Ubicación</a>
+        <a href="#"><i class="fa-solid fa-address-book" id="icono"></i>Contacto</a> 
+    </div>  
+    <div id="caja2" class="caja">
+        <img src="ElMolino1.png" alt="Logo">
+        <h2>El Molino</h2></div>        
+    <div id="caja3" class="caja">
+        <h1>¿Quiénes somos?</h1>
+        <p>El Molino es una cafetería que ofrece una carta de deliciosa gastronomía a precios razonables, todo esto en la mejor atmósfera, generada por su diseño arquitectónico y decoración, acompañado de un esmerado esfuerzo en calidad y servicio.</p>
+        <br>
+        <h3>¡Vive la experiencia!</h3>
+        <p>Disfruta del mejor ambiente y vive una experiencia única en cualquiera de nuestros locales.</p>
+        <p>Nuestra experiencia y nuestra calidad de servicio garantizan tu satisfacción.</p>
+        <br>
+        <h4>Nuestros locales</h4>
+        <p>Cada uno de nuestros establecimientos ha sido creado con el fin de que tu experiencia sea la óptima.</p>
+        <br>
+        <p>Visítanos en el más cercano a ti y disfruta una experiencia única.</p>
+        <p>¡Te esperamos!</p>
+    </div>    
+    <div id="caja4" class="caja">El mejor lugar para disfrutar tu café</div> 
+    <div id="caja5" class="caja">Derechos Reservados | EL Molino © 2022 | WhatsApp:+522556949</div> 
+    <script type="text/javascript">
+        var elem = document.getElementById("cont");
+        elem.addEventListener("click",cambiarCaja);
+        function cambiarCaja(evento){
+            console.log(evento);
+            if(document.getElementById(evento.target.id).classList.contains("caja")){
+                document.getElementById(evento.target.id).classList.toggle("caja");
+            }
+            if(evento.target.id=="caja2"){
+                elem.removeEventListener("click",cambiarCaja);
+            }
+            }
+    </script>
+    </div>
+</body>
+</html>
+
+
