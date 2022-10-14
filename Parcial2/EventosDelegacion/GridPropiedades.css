@@ -159,8 +159,63 @@ h4::before{left:214px;}
 
 h4::after{right:214px;}
 
-.CajaAmarilla{ 
+/*.CajaAmarilla{ 
 background-color: aqua !important;
+height: 150px;
+width: 150px;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+border: 4px solid black;
+animation-name: vuelta;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+.CajaAmarilla:hover {
+    animation-duration: 0s;
+    animation-iteration-count: inherit;
+}
+
+
+@keyframes vuelta {
+    from {
+            transform: rotateZ(0deg);
+    }
+    to {
+            transform: rotateZ(360deg);
+    }
+}*/
+
+.CajaAmarilla {
+    color: black;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    /*cursor: pointer;*/
+    border: 4px solid black;
+    animation-name: desplazar;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-timing-function: linear;
+    /*margin-top: 500px;*/
+}
+
+.CajaAmarilla:hover {
+    animation-duration: 0s;
+    animation-iteration-count: inherit;
+}
+
+@keyframes desplazar {
+    from {
+            transform: translateX(0%);
+    }
+    to {
+            transform:translateX(100%);
+    }
 }
 
 
