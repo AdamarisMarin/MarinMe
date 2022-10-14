@@ -44,32 +44,13 @@
             console.log(evento);
             if(document.getElementById(evento.target.id).classList.contains("caja"))
             {
-                document.getElementById(evento.target.id).classList.toggle("caja");
+                document.getElementById(evento.target.id).classList.toggle("CajaAmarilla");
             }          
-            if(evento.target.id=="caja2")
+            /*if(evento.target.id=="caja2")
             {
                 elem.removeEventListener("click",cambiarCaja);
-            }
+            }*/
         }
-     /*const contenedor = document.querySelector(".contenedor");
-        contenedor.addEventListener("click", (e) => {
-        if(e.target.id === "caja1"){
-            console.log("Click en la caja 1");
-        }
-        if(e.target.id === "caja2"){
-            console.log("Click en la caja 2");
-        }
-        
-        if(e.target.id === "caja3"){
-            console.log("Click en la caja 3");
-        }
-        if(e.target.id === "caja4"){
-            console.log("Click en la caja 4");
-        }
-        if(e.target.id === "caja5"){
-            console.log("Click en la caja 5");
-        }
-    });*/  
     </script>
 </body> 
 </html>

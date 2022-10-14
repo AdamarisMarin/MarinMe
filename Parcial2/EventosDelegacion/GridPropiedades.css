@@ -29,7 +29,7 @@
     }
 #caja3{ 
     grid-area: columna1;
-    background-image: Url(Cofee1.jpg); 
+    background-image: Url(Cofee1.jpg);
     font-size: 20px; 
     font-family: Arial;
     padding: 15px 18px;
@@ -158,5 +158,9 @@ h3::after{right:270px;}
 h4::before{left:214px;}
 
 h4::after{right:214px;}
+
+.CajaAmarilla{ 
+background-color: aqua !important;
+}
 
 
