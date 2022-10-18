@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+width: 100vw;
+height: 100vh; 
+background-color: #b0fff7;
+}
+
+div{
+    border: 2px solid black;
+}
