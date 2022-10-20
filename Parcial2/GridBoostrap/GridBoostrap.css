@@ -17,6 +17,12 @@ height: 100%;
     background-color: rgb(211, 18, 131);
 }
 
+#Columna2{
+    background-image: Url(Frida.jfif); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 #Columna3{
     padding: 17px 9px; 
     font-size: 16px; 
@@ -25,19 +31,21 @@ height: 100%;
     background-color: white;
 }
 
-#Columna2{
-    background-image: Url(Frida.jfif); 
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
 #Columna4{
     background-image: Url(Frase.jpg); 
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-#Column2{
+#Columna6{
+    font-size: 40px; 
+    font-family: monospace;
+    text-align: center;
+    background-color: rgb(245, 243, 143);
+    color: rgb(32, 207, 134);
+}
+
+#Columna7{
     padding: 5px 9px; 
     font-size: 16px; 
     font-family: Arial;
@@ -45,13 +53,19 @@ height: 100%;
     background-color: rgba(179, 250, 183, 0.918);
 }
 
-#Column3{
+#Columna8{
     background-image: Url(Las\ dos\ fridas.jpeg); 
     background-size: 100% 100%;
     background-repeat: no-repeat; 
 }
 
-#Column4{
+#Columna9{
+    background-image: Url(Frase2.jpg); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#Columna10{
     padding: 5px 9px; 
     font-size: 16px; 
     font-family: Arial;
@@ -59,10 +73,16 @@ height: 100%;
     background-color: rgb(253, 253, 159);
 }
 
-#Column5{
+#Columna11{
     background-image: Url(autorrertato-con-monos.jpg); 
     background-size: 100% 100%;
     background-repeat: no-repeat; 
+}
+
+#Columna12{
+    background-image: Url(Frase3.jfif); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 h2{
@@ -76,9 +96,10 @@ h1{
     color: #fdfd96; 
     font-size: 50px;
     text-align: center;
+    padding: 10px 18px;
 }
 
 .Titulo{
     font-family:  Brush Script MT;
-    font-size: 70px;
+    font-size: 80px;
 }
