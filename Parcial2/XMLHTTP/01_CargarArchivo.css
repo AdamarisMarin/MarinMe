@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+width: 100vw;
+height: 100vh; 
+background-color: #d3bcf6;
+}
+
+header{
+    text-align: center;
+    font-size: 57px;
+    font-family: Brush Script MT;
+    color: rgb(134, 75, 134);    
+    height: 120px;
+    line-height: 120px;
+    background-repeat: repeat;
+    background-color: #f8ebb0;
+}
+
+button{
+    padding: 5px 5px;
+    background-color: #bc98f3; 
+    border-radius: 10px; 
+    font-family: Arial Black; 
+    color: #4b1c71;
+}
