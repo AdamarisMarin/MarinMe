@@ -5,20 +5,23 @@
 }
 
 .content{
-width: 100vw;
-height: 100vh; 
+width: 1350px;
+height: 100vw; 
 background-color: #d3bcf6;
+display: block;
+justify-content: center;
+text-align: center;  
 }
 
 header{
     text-align: center;
-    font-size: 57px;
+    font-size: 40px;
     font-family: Brush Script MT;
     color: rgb(134, 75, 134);    
     height: 120px;
     line-height: 120px;
     background-repeat: repeat;
-    background-color: #f8ebb0;
+    background-color: #fdfd96;
 }
 
 button{
@@ -27,4 +30,18 @@ button{
     border-radius: 10px; 
     font-family: Arial Black; 
     color: #4b1c71;
+    font-size: 16px;      
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 16px 30px;
+    text-align: justify;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #8f107a; 
 }
