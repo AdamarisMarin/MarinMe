@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XMLHTTP</title>
-    <link rel="stylesheet" href="01_CargarArchivo.css">   
-    <script src="./01_CargarArchivo.js"></script>
+    <title>API</title>
+    <link rel="stylesheet" href="01_CargarArchivo.css">  
 </head>
 <body>
-    <header><h1>Cálculo de cuadrado</h1></header>
+    
     <div class="content"><br> 
-    <from id="formulario" method="GET" action=""></from>
-
-    <label from="num">Tecla numero:</label>
-    <input type="text" id="num" name="num" size="10"/><br><br>
-
-    <input type="submit" id="botonCaja" value="boton Submit"/>
-    <input type="button" id="botonAjax" value="boton Ajax"/>
+   <div id="broma"></div>
+   <br><br>
+  <button id="btnPeticion">Peticion</button>
 </div> 
+  <script>
+    document.getElementById("btnPeticion").addEventListener("click",function(){
+        fetch("https://api.chucknorris.io/jokes/random")
+        .then( respuesta => respuesta.json() )
+        .then( datoJson => document.getElementById("broma").innerText=datoJson.value );
+    });
+  </script>
+
 </body>
 </html>
