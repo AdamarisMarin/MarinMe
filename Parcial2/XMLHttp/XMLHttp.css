@@ -5,8 +5,8 @@
 }
 
 .content{
-width: 1350px;
-height: 100vw; 
+width: 100vw;
+height: 100vh; 
 background-color: #d3bcf6;
 display: block;
 justify-content: center;
