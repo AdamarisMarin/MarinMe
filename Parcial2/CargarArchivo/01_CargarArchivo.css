@@ -11,6 +11,7 @@ background-color: pink;
 display: block;
 justify-content: center;
 text-align: center;  
+font-size: 40px;
 }
 
 /*header{
@@ -30,7 +31,7 @@ button{
     border-radius: 10px; 
     font-family: Arial Black; 
     color: #4b1c71;
-    font-size: 16px;      
+    font-size: 18px;      
 }
 
 
