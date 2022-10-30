@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
     <link rel="stylesheet" href="01_CargarArchivo.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
-    
-  <div class="content"><br> 
-   <div id="broma"></div>
-   <br>
-  <button id="btnPeticion">Peticion</button>
-  </div> 
+<body>    
+  
+    <div  class ="contenedor" id ="contenedor" > </div>
 
-  <script>
-    document.getElementById("btnPeticion").addEventListener("click",function(){
-        fetch("https://api.chucknorris.io/jokes/random") 
-        .then( respuesta => respuesta.json() )
-        .then( datoJson => document.getElementById("broma").innerText=datoJson.value );
-    });
-  </script>
+    <div  class ="paginacion">
+      <button  id ="btnAnterior"> Anterior </button>
+      <button  id ="btnSiguiente"> Siguiente </button>
+    </div>    
+  
+ <script  src ="CargarArchivo.js "> </script>
 
 </body>
 </html>
