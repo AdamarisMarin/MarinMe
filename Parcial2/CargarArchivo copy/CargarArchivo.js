@@ -16,14 +16,20 @@ btnAnterior.addEventListener('click', () => {
 	}
 });
 
+document.getElementById("btnPeticionFetch").addEventListener("click",function(){
+	fetch("https://api.chucknorris.io/jokes/random") 
+	.then( respuesta => respuesta.json() )
+	.then( datoJson => document.getElementById("caja").innerText=datoJson.value );
+})
+
 const cargarPeliculas = async() => {
 	try {
-		const respuesta =  fetch(`https://api.themoviedb.org/3/movie/popular?api_key=192e0b9821564f26f52949758ea3c473&language=es-MX&page=${pagina}`);
+		fetch(`https://api.themoviedb.org/3/movie/popular?api_key=192e0b9821564f26f52949758ea3c473&language=es-MX&page=${pagina}`);
 	
 		console.log(respuesta);
 		
 		if(respuesta.status === 200){
-			const datos =  respuesta.json();
+			const datos = await respuesta.json();
 			
 			let peliculas = '';
 			datos.results.forEach(pelicula => {

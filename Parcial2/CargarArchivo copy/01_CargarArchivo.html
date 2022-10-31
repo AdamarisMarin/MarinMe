@@ -13,12 +13,12 @@
   
    <button id="btnPeticionFetch">PeticionFetch</button>
    <button id="btnPeticionFetchAsyncAwait">PeticionFetchAsyncAwait</button>
-   <button id="btnPeticionJQuery">PeticionJQuery</button>
+   
    <div id="caja"></div>
    </div> 
 
    <script>
-    window.onload=fuction(){   
+    window.onload=function() {   
      document.getElementById("btnPeticionFetch").addEventListener("click",function(){
          fetch("https://api.chucknorris.io/jokes/random") 
          .then( respuesta => respuesta.json() )
@@ -29,7 +29,7 @@
       let respuesta = await fetch("https://api.chucknorris.io/jokes/random");
       let datoJson = await respuesta.json();
       document.getElementById("caja").innerText=datoJson.value;
-    });
+    })
   }
    </script>
 
