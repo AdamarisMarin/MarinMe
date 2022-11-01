@@ -42,7 +42,7 @@ const cargarPeliculas = async() => {
 		} else if(respuesta.status === 404){
 			console.log('La pelicula que buscas no existe');
 		} else {
-			console.log('Hubo un error y no sabemos que paso');
+			console.log('Error');
 		}
 
 	} catch(error){
