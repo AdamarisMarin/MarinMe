@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>Pedidos</header>
+    <form>
+      <h1>Datos del cliente</h1>
+        <div class="row">
+        <label for="idCli" class="col-sm-1 col-form-label">Id</label>  
+        <div class="form-group col-sm-12 col-md-4 col-lg-4">          
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        </div>
+
+        <div class="row">
+          <label for="idNombre" class="col-sm-1 col-form-label">Nombre</label>
+          <div class="form-group col-sm-12 col-md-4 col-lg-4">          
+          <input type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="idDireccion" class="col-sm-1 col-form-label">Direccion</label>
+        <div class="form-group col-sm-12 col-md-4 col-lg-4">            
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="1234 calle, colonia">
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="idTelefono" class="col-sm-1 col-form-label">Telefono</label>
+          <div class="form-group col-sm-12 col-md-4 col-lg-4">            
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+        </div>
+       
+        <br>
+        <h1>Orden</h1>
+
+        <div class="row">
+            <div class="form-group col-sm-12 col-md-4 col-lg-2">  
+            <label for="idCantidad" class="col-sm-1 col-form-label">Cantidad</label>                      
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>          
+
+          <div class="col-sm-12 col-md-4 col-lg-2">
+            <label for="inputState" class="form-label">Tipo de pizza</label>
+            <select id="inputState" class="form-select">
+              <option selected>Hawaiana</option>
+              <option>Pepperoni</option>
+              <option>Mexicana</option>
+              <option>Cuatro quesos</option>
+            </select>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-2">
+            <label for="inputState" class="form-label">Tamaño</label>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+              Chico
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+             Mediano
+            </label>
+          </div>     
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+             Grande
+            </label>
+          </div>  
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-2">
+            <label for="inputState" class="form-label">Solo si no es especialidad</label>
+            <label for="inputState" class="form-label">Ingredientes</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+              <label class="form-check-label" for="flexCheckDefault">
+                Pepperoni
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Carne
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Queso
+              </label>              
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Chorizo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Jalapeño
+              </label>
+            </div>
+          </div>                
+
+        </div><br>
+        
+        <div class="row">
+          <label for="inputState" class="form-label">Adicionales</label>
+        <div class="col-sm-12 col-md-4 col-lg-2">          
+          <label for="inputState" class="form-label">Entradas</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+              Alitas
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Papotas
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Boneless
+            </label>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-2">          
+          <label for="inputState" class="form-label">Bebidas</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+              Refresco
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Agua
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Jugo
+            </label>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-2">          
+          <label for="inputState" class="form-label">Postres</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+              Brownie
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Volcán
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Cajeta Baitz
+            </label>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-2">          
+          <label for="inputState" class="form-label">Salsas</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+              Pieza cup Marinara
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Pieza cup Salcidita
+            </label>
+          </div>
+        </div>
+        </div>
+<br>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-2">
+            <label for="inputState" class="form-label">Entrega</label>
+            <select id="inputState" class="form-select">
+              <option selected>Recoger</option>
+              <option>Domicilio</option>
+            </select>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-2">
+            <label for="inputState" class="form-label">Forma de pago</label>
+            <select id="inputState" class="form-select">
+              <option selected>Efectivo</option>
+              <option>Tarjeta</option>
+            </select>
+          </div>
+        </div>
+
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+      </form>      
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <!--<img src="..." class="rounded me-2" alt="...">-->
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+ 
+    <script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+    toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+    toast.show()
+    })
+    }    
+    </script>
+</body>
+</html>

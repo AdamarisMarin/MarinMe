@@ -1,1 +1,0 @@
-(()=>{var o={105:(o,r)=>{r.s=o=>o*o}},r={};function e(s){var t=r[s];if(void 0!==t)return t.exports;var l=r[s]={exports:{}};return o[s](l,l.exports,e),l.exports}(()=>{"use strict";var o=e(105);console.log("Hello world webpack"),console.log((0,o.s)(2))})()})();
