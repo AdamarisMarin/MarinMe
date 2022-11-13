@@ -70,6 +70,17 @@ font-family: Arial black;
     font-size: 18px; 
 }
 
+#liveToastBtn
+{
+    padding: 5px 5px;
+    background-color: rgb(255, 59, 92); 
+    border-radius: 10px; 
+    border: 3px solid #e90c0c;
+    font-family: Arial Black; 
+    color: #f3e636;
+    font-size: 18px; 
+}
+
 @media screen and (max-width: 800px){
     .content{
 background-size: 100% 25%;
