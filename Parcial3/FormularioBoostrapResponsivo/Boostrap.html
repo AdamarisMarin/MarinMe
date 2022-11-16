@@ -15,17 +15,17 @@
         <div class="row">        
         <div class="form-group col-sm-12 col-md-4 col-lg-4">     
         <label for="idCli" class="col-form-label" id="DatosCliente">Id</label>               
-          <input type="text" class="form-control" id="idCliente">
+          <input type="text" class="form-control" id="idCli">
         </div>
 
          <div class="form-group col-sm-12 col-md-4 col-lg-4"> 
           <label for="idNombre" class="col-form-label" id="DatosCliente">Nombre</label>                   
-          <input type="text" class="form-control" id="idCliente">
+          <input type="text" class="form-control" id="idNombre">
         </div>
 
         <div class="form-group col-sm-12 col-md-4 col-lg-4"> 
           <label for="idApellido" class="col-form-label" id="DatosCliente">Apellidos</label>                   
-          <input type="text" class="form-control" id="idCliente">
+          <input type="text" class="form-control" id="idApellido">
         </div>
 
         </div>
@@ -34,17 +34,17 @@
 
         <div class="form-group col-sm-12 col-md-4 col-lg-4">   
         <label for="idDireccion" class="col-form-label" id="DatosCliente">Direccion</label>                 
-            <input type="text" class="form-control" id="idCliente" placeholder="1234 calle, colonia">
+            <input type="text" class="form-control" id="idDireccion" placeholder="1234 calle, colonia">
           </div>
 
           <div class="form-group col-sm-12 col-md-4 col-lg-4">  
           <label for="idTelefono" class="col-form-label" id="DatosCliente">Telefono</label>                    
-            <input type="text" class="form-control" id="idCliente">
+            <input type="text" class="form-control" id="idTelefono">
           </div>
 
           <div class="form-group col-sm-12 col-md-4 col-lg-4">  
             <label for="idCorreo" class="col-form-label" id="DatosCliente">Correo electronico</label>                    
-              <input type="text" class="form-control" id="idCliente" placeholder="nombre@email.com">
+              <input type="text" class="form-control" id="idCorreo" placeholder="nombre@email.com">
             </div>
 
       </div>
@@ -54,12 +54,12 @@
         <div class="row">                   
         <div class="form-group col-sm-12 col-md-4 col-lg-4">   
           <label for="idCantidad" class="form-label" id="DatosOrden">Cantidad</label>           
-          <input type="text" class="form-control" id="idOrden">
+          <input type="text" class="form-control" id="idCantidad">
           </div>
 
           <div class="col-sm-12 col-md-4 col-lg-4">
             <label for="inputState" class="form-label" id="DatosOrden">Tipo de pizza</label>
-            <select id="idOrden" class="form-select">
+            <select id="idTipo" class="form-select">
               <option selected>Ninguno</option>
               <option>Hawaiana</option>
               <option>Pepperoni</option>
@@ -69,190 +69,20 @@
           </div>
 
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <label for="inputState" class="form-label" id="DatosOrden">Tamaño</label>
-          
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-            <label class="form-check-label" for="flexRadioDefault1">
-              Chico
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">
-             Mediano
-            </label>
-          </div>     
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">
-             Grande
-            </label>
-          </div>  
-          </div>
-        </div><br>
-
-        <div class="row">
-           <label for="inputState" class="form-label" id="idIngredientes">Arma tu pizza</label>
-          <div class="col-sm-12 col-md-3 col-lg-3">           
-            <label for="inputState" class="form-label" id="DatosOrden">Ingredientes 1</label>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-              <label class="form-check-label" for="flexCheckDefault">
-                Pepperoni
-              </label>
+              <label for="inputState" class="form-label" id="DatosOrden">Tamaño</label>
+              <select id="idTamaño" class="form-select">
+                <option selected>Chico</option>
+                <option>Mediano</option>
+                <option>Grande</option>
+              </select>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Carne
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Queso
-              </label>              
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Chorizo
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Tocino
-              </label>
-            </div>
-          </div>
-          
-          <div class="col-sm-12 col-md-3 col-lg-6">           
-            <label for="inputState" class="form-label" id="DatosOrden">Ingredientes 2</label>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-              <label class="form-check-label" for="flexCheckDefault">
-                Tomate
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Champiñones
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Pimiento
-              </label>              
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Oregano
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                Jalapeño
-              </label>
-            </div>
-          </div>  
-        </div><br>
-        
-        
-        <div class="row">
-          <label for="inputState" class="form-label" id="idAdicionales">Adicionales</label>
-        <div class="col-sm-12 col-md-3 col-lg-3">          
-          <label for="inputState" class="form-label" id="DatosOrden">Entradas</label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-            <label class="form-check-label" for="flexCheckDefault">
-              Alitas
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Papotas
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Boneless
-            </label>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-3 col-lg-3">          
-          <label for="inputState" class="form-label" id="DatosOrden">Bebidas</label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-            <label class="form-check-label" for="flexCheckDefault">
-              Refresco
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Agua
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Jugo
-            </label>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-3 col-lg-3">          
-          <label for="inputState" class="form-label" id="DatosOrden">Postres</label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-            <label class="form-check-label" for="flexCheckDefault">
-              Brownie
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Volcán
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Cajeta Baitz
-            </label>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-3 col-lg-3">          
-          <label for="inputState" class="form-label" id="DatosOrden">Salsas</label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-            <label class="form-check-label" for="flexCheckDefault">
-              Pieza cup Marinara
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Pieza cup Salcidita
-            </label>
-          </div>
-        </div>
-        </div>
-<br>
+        </div>    
+   
+        <br>
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-6">
             <label for="inputState" class="form-label" id="DatosOrden">Entrega</label>
-            <select id="idOrden" class="form-select">
+            <select id="idEntrega" class="form-select">
               <option selected>Domicilio</option>
               <option>Recoger</option>
             </select>
@@ -260,7 +90,7 @@
 
           <div class="col-sm-12 col-md-6 col-lg-6">
             <label for="inputState" class="form-label" id="DatosOrden">Forma de pago</label>
-            <select id="idOrden" class="form-select">
+            <select id="idPago" class="form-select">
               <option selected>Efectivo</option>
               <option>Tarjeta</option>
             </select>
@@ -334,6 +164,15 @@ fetch('GetRegistro.php')
 function refrescar(reg) {
   document.getElementById("idCli").value=reg.id;
   document.getElementById("idNombre").value=reg.nombre;
+  document.getElementById("idApellido").value=reg.apellidos;
+  document.getElementById("idDireccion").value=reg.direccion;
+  document.getElementById("idTelefono").value=reg.telefono;
+  document.getElementById("idCorreo").value=reg.correo;
+  document.getElementById("idCantidad").value=reg.cantidad;
+  document.getElementById("idTipo").value=reg.tipo;
+  document.getElementById("idTamaño").value=reg.tamaño;
+  document.getElementById("idEntrega").value=reg.entrega;
+  document.getElementById("idPago").value=reg.pago;
 }
 });
     </script>
