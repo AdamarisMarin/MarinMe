@@ -12,5 +12,4 @@ $registros = mysqli_query($con,$consulta) or die("Problemas en el select");
 
 $result = mysqli_fetch_array($registros,MYSQLI_ASSOC);
 echo json_encode($result);
-
 ?>
