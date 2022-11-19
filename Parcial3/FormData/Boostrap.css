@@ -34,17 +34,17 @@ font-family: Arial black;
     font-family: Arial black;
 }
 
-#idCli{border: 2px solid black;}
-#idNombre{border: 2px solid black;}
-#idApellido{border: 2px solid black;}
-#idDireccion{border: 2px solid black;}
-#idTelefono{border: 2px solid black;}
-#idCorreo{border: 2px solid black;}
-#idCantidad{border: 2px solid black;}
-#idTipo{border: 2px solid black;}
-#idTamaño{border: 2px solid black;}
-#idEntrega{border: 2px solid black;}
-#idPago{border: 2px solid black;}
+#id{border: 2px solid black;}
+#nombre{border: 2px solid black;}
+#apellidos{border: 2px solid black;}
+#direccion{border: 2px solid black;}
+#telefono{border: 2px solid black;}
+#correo{border: 2px solid black;}
+#cantidad{border: 2px solid black;}
+#tipo{border: 2px solid black;}
+#tamaño{border: 2px solid black;}
+#entrega{border: 2px solid black;}
+#pago{border: 2px solid black;}
 
 #DatosOrden{
     font-size: 20px;

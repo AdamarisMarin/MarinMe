@@ -15,17 +15,17 @@
         <div class="row">        
         <div class="form-group col-sm-12 col-md-4 col-lg-4">     
         <label for="idCli" class="col-form-label" id="DatosCliente">Id</label>               
-          <input type="text" class="form-control" id="idCli" name="formulario">
+          <input type="text" class="form-control" id="id" name="id">
         </div>
 
          <div class="form-group col-sm-12 col-md-4 col-lg-4"> 
           <label for="idNombre" class="col-form-label" id="DatosCliente">Nombre</label>                   
-          <input type="text" class="form-control" id="idNombre" name="formulario">
+          <input type="text" class="form-control" id="nombre" name="nombre">
         </div>
 
         <div class="form-group col-sm-12 col-md-4 col-lg-4"> 
           <label for="idApellido" class="col-form-label" id="DatosCliente">Apellidos</label>                   
-          <input type="text" class="form-control" id="idApellido" name="formulario">
+          <input type="text" class="form-control" id="apellidos" name="apellidos">
         </div>
 
         </div>
@@ -34,17 +34,17 @@
 
         <div class="form-group col-sm-12 col-md-4 col-lg-4">   
         <label for="idDireccion" class="col-form-label" id="DatosCliente">Direccion</label>                 
-            <input type="text" class="form-control" id="idDireccion" placeholder="1234 calle, colonia" name="formulario">
+            <input type="text" class="form-control" id="direccion" placeholder="1234 calle, colonia" name="direccion">
           </div>
 
           <div class="form-group col-sm-12 col-md-4 col-lg-4">  
           <label for="idTelefono" class="col-form-label" id="DatosCliente">Telefono</label>                    
-            <input type="text" class="form-control" id="idTelefono" name="formulario">
+            <input type="text" class="form-control" id="telefono" name="telefono">
           </div>
 
           <div class="form-group col-sm-12 col-md-4 col-lg-4">  
             <label for="idCorreo" class="col-form-label" id="DatosCliente">Correo electronico</label>                    
-              <input type="text" class="form-control" id="idCorreo" placeholder="nombre@email.com" name="formulario">
+              <input type="text" class="form-control" id="correo" placeholder="nombre@email.com" name="correo">
             </div>
 
       </div>
@@ -53,47 +53,31 @@
         <h2>Orden</h2>
         <div class="row">                   
         <div class="form-group col-sm-12 col-md-4 col-lg-4">   
-          <label for="idCantidad" class="form-label" id="DatosOrden">Cantidad</label>           
-          <input type="text" class="form-control" id="idCantidad" name="formulario">
+          <label for="idCantidad" class="col-form-label" id="DatosOrden">Cantidad</label>           
+          <input type="text" class="form-control" id="cantidad" name="cantidad">
+          </div>
+
+            <div class="form-group col-sm-12 col-md-4 col-lg-4">     
+              <label for="idTipo" class="col-form-label" id="DatosOrden">Tipo de pizza</label>               
+                <input type="text" class="form-control" id="tipo" name="tipo">
           </div>
 
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <label for="inputState" class="form-label" id="DatosOrden">Tipo de pizza</label>
-            <select id="idTipo" class="form-select">
-              <option selected>Ninguno</option>
-              <option>Hawaiana</option>
-              <option>Pepperoni</option>
-              <option>Mexicana</option>
-              <option>Cuatro quesos</option>
-            </select>
-          </div>
-
-          <div class="col-sm-12 col-md-4 col-lg-4">
-              <label for="inputState" class="form-label" id="DatosOrden">Tamaño</label>
-              <select id="idTamaño" class="form-select">
-                <option selected>Chico</option>
-                <option>Mediano</option>
-                <option>Grande</option>
-              </select>
+              <label for="idTamaño" class="col-form-label" id="DatosOrden">Tamaño</label>
+              <input type="text" class="form-control" id="tamaño" name="tamaño">
             </div>
         </div>    
    
         <br>
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <label for="inputState" class="form-label" id="DatosOrden">Entrega</label>
-            <select id="idEntrega" class="form-select">
-              <option selected>Domicilio</option>
-              <option>Recoger</option>
-            </select>
+            <label for="idEntrega" class="col-form-label" id="DatosOrden">Entrega</label>
+            <input type="text" class="form-control" id="entrega" name="entrega">
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <label for="inputState" class="form-label" id="DatosOrden">Forma de pago</label>
-            <select id="idPago" class="form-select">
-              <option selected>Efectivo</option>
-              <option>Tarjeta</option>
-            </select>
+            <label for="idPago" class="col-form-label" id="DatosOrden">Forma de pago</label>
+            <input type="text" class="form-control" id="pago" name="pago">
           </div>
         </div>
 
@@ -158,24 +142,23 @@ myModal.show()
 
 document.getElementById("btnGet").addEventListener("click", async () => {
   var datosFormulario = new FormData(document.getElementById("formulario"));
-  let respuesta = await fetch('mysqli.php',{
+  let respuesta = await fetch('GetRegistro.php',{
     method: 'POST',
     body: datosFormulario
   })
 let dato = await respuesta.json();
 
-  document.getElementById("idCli").value=dato.id;
-  document.getElementById("idNombre").value=dato.nombre;
-  document.getElementById("idApellido").value=dato.apellidos;
-  document.getElementById("idDireccion").value=dato.direccion;
-  document.getElementById("idTelefono").value=dato.telefono;
-  document.getElementById("idCorreo").value=dato.correo;
-  document.getElementById("idCantidad").value=dato.cantidad;
-  document.getElementById("idTipo").value=dato.tipo;
-  document.getElementById("idTamaño").value=dato.tamaño;
-  document.getElementById("idEntrega").value=dato.entrega;
-  document.getElementById("idPago").value=dato.pago;
-
+  document.getElementById("id").value=dato.id;
+  document.getElementById("nombre").value=dato.nombre;
+  document.getElementById("apellidos").value=dato.apellidos;
+  document.getElementById("direccion").value=dato.direccion;
+  document.getElementById("telefono").value=dato.telefono;
+  document.getElementById("correo").value=dato.correo;
+  document.getElementById("cantidad").value=dato.cantidad;
+  document.getElementById("tipo").value=dato.tipo;
+  document.getElementById("tamaño").value=dato.tamaño;
+  document.getElementById("entrega").value=dato.entrega;
+  document.getElementById("pago").value=dato.pago;
 });
     </script>
 </body>
