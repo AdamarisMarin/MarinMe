@@ -15,17 +15,17 @@
         <div class="row">        
         <div class="form-group col-sm-12 col-md-4 col-lg-4">     
         <label for="idCli" class="col-form-label" id="DatosCliente">Id</label>               
-          <input type="text" class="form-control" id="id" name="id">
+          <input name="id" type="text" class="form-control" id="id" >
         </div>
 
          <div class="form-group col-sm-12 col-md-4 col-lg-4"> 
           <label for="idNombre" class="col-form-label" id="DatosCliente">Nombre</label>                   
-          <input type="text" class="form-control" id="nombre" name="nombre">
+          <input name="nombre" type="text" class="form-control" id="nombre" >
         </div>
 
         <div class="form-group col-sm-12 col-md-4 col-lg-4"> 
           <label for="idApellido" class="col-form-label" id="DatosCliente">Apellidos</label>                   
-          <input type="text" class="form-control" id="apellidos" name="apellidos">
+          <input name="apellidos" type="text" class="form-control" id="apellidos" >
         </div>
 
         </div>
@@ -34,17 +34,17 @@
 
         <div class="form-group col-sm-12 col-md-4 col-lg-4">   
         <label for="idDireccion" class="col-form-label" id="DatosCliente">Direccion</label>                 
-            <input type="text" class="form-control" id="direccion" placeholder="1234 calle, colonia" name="direccion">
+            <input name="direccion" type="text" class="form-control" id="direccion" placeholder="1234 calle, colonia" >
           </div>
 
           <div class="form-group col-sm-12 col-md-4 col-lg-4">  
           <label for="idTelefono" class="col-form-label" id="DatosCliente">Telefono</label>                    
-            <input type="text" class="form-control" id="telefono" name="telefono">
+            <input name="telefono" type="text" class="form-control" id="telefono" >
           </div>
 
           <div class="form-group col-sm-12 col-md-4 col-lg-4">  
             <label for="idCorreo" class="col-form-label" id="DatosCliente">Correo electronico</label>                    
-              <input type="text" class="form-control" id="correo" placeholder="nombre@email.com" name="correo">
+              <input name="correo" type="text" class="form-control" id="correo" placeholder="nombre@email.com" >
             </div>
 
       </div>
@@ -54,17 +54,17 @@
         <div class="row">                   
         <div class="form-group col-sm-12 col-md-4 col-lg-4">   
           <label for="idCantidad" class="col-form-label" id="DatosOrden">Cantidad</label>           
-          <input type="text" class="form-control" id="cantidad" name="cantidad">
+          <input name="cantidad" type="text" class="form-control" id="cantidad" >
           </div>
 
             <div class="form-group col-sm-12 col-md-4 col-lg-4">     
               <label for="idTipo" class="col-form-label" id="DatosOrden">Tipo de pizza</label>               
-                <input type="text" class="form-control" id="tipo" name="tipo">
+                <input name="tipo" type="text" class="form-control" id="tipo" >
           </div>
 
           <div class="col-sm-12 col-md-4 col-lg-4">
               <label for="idTamaño" class="col-form-label" id="DatosOrden">Tamaño</label>
-              <input type="text" class="form-control" id="tamaño" name="tamaño">
+              <input name="tamaño" type="text" class="form-control" id="tamaño" >
             </div>
         </div>    
    
@@ -72,12 +72,12 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-6">
             <label for="idEntrega" class="col-form-label" id="DatosOrden">Entrega</label>
-            <input type="text" class="form-control" id="entrega" name="entrega">
+            <input name="entrega" type="text" class="form-control" id="entrega" >
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-6">
             <label for="idPago" class="col-form-label" id="DatosOrden">Forma de pago</label>
-            <input type="text" class="form-control" id="pago" name="pago">
+            <input name="pago" type="text" class="form-control" id="pago" >
           </div>
         </div>
 
@@ -141,7 +141,7 @@ myModal.show()
 })
 
 document.getElementById("btnGet").addEventListener("click", async () => {
-  var datosFormulario = new FormData(document.getElementById("formulario"));
+  var datosFormulario = new FormData(document.getElementById("formulario"));  
   let respuesta = await fetch('GetRegistro.php',{
     method: 'POST',
     body: datosFormulario
