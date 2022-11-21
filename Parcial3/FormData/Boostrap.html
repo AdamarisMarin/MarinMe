@@ -85,6 +85,7 @@
         <button type="submit" class="btn btn-primary" id="Submit">Enviar</button>
         <button type="button" class="btn btn-primary" id="liveToastBtn">Toast</button>
        <button type="button" class="btn btn-primary" id="dispararModal">Modal</button>
+       <button type="button" class="btn btn-primary" id="btnGet2">Traer registro</button>
        <button type="button" class="btn btn-primary" id="btnGet">Consultar</button>
       </form>      
 
@@ -138,6 +139,26 @@
   keyboard: false   
 })
 myModal.show()
+});
+
+document.getElementById("btnGet2").addEventListener("click", () => {
+fetch('GetRegistro.php')
+.then(respuesta=>respuesta.json())
+.then(dato=>refrescar(dato));
+
+function refrescar(reg) {
+  document.getElementById("idC").value=reg.id;
+  document.getElementById("idNombre").value=reg.nombre;
+  document.getElementById("idApellidos").value=reg.apellidos;
+  document.getElementById("idDireccion").value=reg.direccion;
+  document.getElementById("idTelefono").value=reg.telefono;
+  document.getElementById("idCorreo").value=reg.correo;
+  document.getElementById("idCantidad").value=reg.cantidad;
+  document.getElementById("idTipo").value=reg.tipo;
+  document.getElementById("idTamano").value=reg.tamano;
+  document.getElementById("idEntrega").value=reg.entrega;
+  document.getElementById("idPago").value=reg.pago;
+}
 });
 
 document.getElementById("btnGet").addEventListener("click", async () => {

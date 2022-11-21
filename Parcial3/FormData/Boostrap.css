@@ -42,7 +42,7 @@ font-family: Arial black;
 #idCorreo{border: 2px solid black;}
 #idCantidad{border: 2px solid black;}
 #idTipo{border: 2px solid black;}
-#idTamaño{border: 2px solid black;}
+#idTamano{border: 2px solid black;}
 #idEntrega{border: 2px solid black;}
 #idPago{border: 2px solid black;}
 
@@ -97,6 +97,17 @@ font-family: Arial black;
 }
 
 #btnGet
+{
+    padding: 5px 5px;
+    background-color: rgb(255, 59, 92); 
+    border-radius: 10px; 
+    border: 3px solid #e90c0c;
+    font-family: Arial Black; 
+    color: #f3e636;
+    font-size: 18px; 
+}
+
+#btnGet2
 {
     padding: 5px 5px;
     background-color: rgb(255, 59, 92); 
