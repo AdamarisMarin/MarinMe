@@ -13,7 +13,6 @@ $(document).ready(function(){
       $.ajax(settings).done(function (response) {
         let table = JSON.parse(response);
 
-
     $("#jsGrid").jsGrid({
         width: "100%",
         height: "400px",
@@ -25,17 +24,17 @@ $(document).ready(function(){
         data: table,
  
         fields: [
-            { name: "id", type: "number",validate: "required" },
-            { name: "nombre", type: "text"},
-            { name: "apellidos", type: "text"},
-            { name: "direccion", type: "text"},
-            { name: "telefono", type: "text"},
-            { name: "correo", type: "text"},
-            { name: "cantidad", type: "number"},
-            { name: "tipo", type: "text"},
-            { name: "tamano", type: "text"},
-            { name: "entrega", type: "text"},
-            { name: "pago", type: "text"},
+            { name: "id", type: "number", width:24, validate: "required" },
+            { name: "nombre", type: "text",width:35},
+            { name: "apellidos", type: "text",width:35},
+            { name: "direccion", type: "text",width:37},
+            { name: "telefono", type: "text",width:37},
+            { name: "correo", type: "text",width:62},
+            { name: "cantidad", type: "number",width:24},
+            { name: "tipo", type: "text",width:30},
+            { name: "tamano", type: "text",width:30},
+            { name: "entrega", type: "text",width:30},
+            { name: "pago", type: "text",width:30},
             { type: "control" }
         ]
     });
