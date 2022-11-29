@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script>
+     (async () =>{
+        let headerList = {"Accept": "*/*",}
+        let response = await fetch("http://localhost/MarinMe/Parcial3/GridJS/Consulta.php", {
+            method: "GET",
+            headers: headerList        
+        });
+        let datos = await response.json();
+
+        new gridjs.Grid({
+            columns: ["id", "nombre", "apellidos", "direccion", "telefono", "correo", "cantidad", "tipo","tamano", "entrega", "pago"],
+            data: datos
+        }).render(document.getElementById("wrapper"));
+     })();
+    </script>
+  </body>
+</html>
