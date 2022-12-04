@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="Boostrap.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>Pedidos</header>
+    <div class="content">
+    <form id="formulario">
+      <h2>Datos del cliente</h2>
+        <div class="row">        
+        <div class="form-group col-sm-12 col-md-4 col-lg-4">     
+        <label for="idC" class="col-form-label" id="DatosCliente">Id</label>               
+          <input name="idC" type="cliente" class="form-control" id="idC" >
+        </div>
+
+         <div class="form-group col-sm-12 col-md-4 col-lg-4"> 
+          <label for="idNombre" class="col-form-label" id="DatosCliente">Nombre</label>                   
+          <input name="idNombre" type="nombre" class="form-control" id="idNombre" >
+        </div>
+
+        <div class="form-group col-sm-12 col-md-4 col-lg-4"> 
+          <label for="idApellidos" class="col-form-label" id="DatosCliente">Apellidos</label>                   
+          <input name="idApellidos" type="apellidos" class="form-control" id="idApellidos" >
+        </div>
+
+        </div>
+
+        <div class="row">      
+
+        <div class="form-group col-sm-12 col-md-4 col-lg-4">   
+        <label for="idDireccion" class="col-form-label" id="DatosCliente">Direccion</label>                 
+            <input name="idDireccion" type="direccion" class="form-control" id="idDireccion" placeholder="1234 calle, colonia" >
+          </div>
+
+          <div class="form-group col-sm-12 col-md-4 col-lg-4">  
+          <label for="idTelefono" class="col-form-label" id="DatosCliente">Telefono</label>                    
+            <input name="idTelefono" type="telefono" class="form-control" id="idTelefono" >
+          </div>
+
+          <div class="form-group col-sm-12 col-md-4 col-lg-4">  
+            <label for="idCorreo" class="col-form-label" id="DatosCliente">Correo electronico</label>                    
+              <input name="idCorreo" type="correo" class="form-control" id="idCorreo" placeholder="nombre@email.com" >
+            </div>
+
+      </div>
+               
+        <br>
+        <h2>Orden</h2>
+        <div class="row">                   
+        <div class="form-group col-sm-12 col-md-4 col-lg-4">   
+          <label for="idCantidad" class="col-form-label" id="DatosOrden">Cantidad</label>           
+          <input name="idCantidad" type="cantidad" class="form-control" id="idCantidad" >
+          </div>
+
+            <div class="form-group col-sm-12 col-md-4 col-lg-4">     
+              <label for="idTipo" class="col-form-label" id="DatosOrden">Tipo de pizza</label>               
+                <input name="idTipo" type="tipo" class="form-control" id="idTipo" >
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+              <label for="idTamano" class="col-form-label" id="DatosOrden">Tamaño</label>
+              <input name="idTamano" type="tamano" class="form-control" id="idTamano" >
+            </div>
+        </div>    
+   
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <label for="idEntrega" class="col-form-label" id="DatosOrden">Entrega</label>
+            <input name="idEntrega" type="entrega" class="form-control" id="idEntrega" >
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <label for="idPago" class="col-form-label" id="DatosOrden">Forma de pago</label>
+            <input name="idPago" type="pago" class="form-control" id="idPago" >
+          </div>
+        </div>
+
+        <br>
+        <button type="submit" class="btn btn-primary" id="Submit">Enviar</button>
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Toast</button>
+       <button type="button" class="btn btn-primary" id="dispararModal">Modal</button>
+       <button type="button" class="btn btn-primary" id="btnGet2">Traer registro</button>
+       <button type="button" class="btn btn-primary" id="btnGet">Consultar</button>
+      </form>      
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <!--<img src="..." class="rounded me-2" alt="...">-->
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+
+ <div class="modal" tabindex="-1" id="myModal">
+    <div class="modal-dialog" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">¡Bienvenido!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="parrafo1">15% En todo el menú</p>
+          <p class="parrafo2">Llama, ordena y pasa por tu pedido</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCerrar">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="btnGuardar">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>  
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+ 
+    <script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+    toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+    toast.show()
+    })
+    }
+    document.getElementById('dispararModal').addEventListener("click", ()=>{        
+        const myModal = new bootstrap.Modal('#myModal', {
+  keyboard: false   
+})
+myModal.show()
+});
+
+document.getElementById("btnGet2").addEventListener("click", () => {
+fetch('GetRegistro.php')
+.then(respuesta=>respuesta.json())
+.then(dato=>refrescar(dato));
+
+function refrescar(reg) {
+  document.getElementById("idC").value=reg.id;
+  document.getElementById("idNombre").value=reg.nombre;
+  document.getElementById("idApellidos").value=reg.apellidos;
+  document.getElementById("idDireccion").value=reg.direccion;
+  document.getElementById("idTelefono").value=reg.telefono;
+  document.getElementById("idCorreo").value=reg.correo;
+  document.getElementById("idCantidad").value=reg.cantidad;
+  document.getElementById("idTipo").value=reg.tipo;
+  document.getElementById("idTamano").value=reg.tamano;
+  document.getElementById("idEntrega").value=reg.entrega;
+  document.getElementById("idPago").value=reg.pago;
+}
+});
+
+document.getElementById("btnGet").addEventListener("click", async () => {
+  var datosFormulario = new FormData(document.getElementById("formulario"));   
+  let respuesta = await fetch('Consulta.php', {
+    method: 'POST',
+    body: datosFormulario
+  })
+  
+let dato = await respuesta.json();
+  //document.getElementById("idC").value=dato.idCliente;
+  document.getElementById("idNombre").value=dato.nombre;
+  document.getElementById("idApellidos").value=dato.apellidos;
+  document.getElementById("idDireccion").value=dato.direccion;
+  document.getElementById("idTelefono").value=dato.telefono;
+  document.getElementById("idCorreo").value=dato.correo;
+  document.getElementById("idCantidad").value=dato.cantidad;
+  document.getElementById("idTipo").value=dato.tipo;
+  document.getElementById("idTamano").value=dato.tamano;
+  document.getElementById("idEntrega").value=dato.entrega;
+  document.getElementById("idPago").value=dato.pago;  
+});
+
+    </script>
+</body>
+</html>
