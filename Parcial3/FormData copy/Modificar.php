@@ -17,8 +17,8 @@ $password="";
 
 
 $con = mysqli_connect($servidor,$usuario,$password,$basedatos) or die ("No se puede conectar");
-$consulta= "Update cliente set id='$id' nombre='$Nombre',direccion='$Direccion',telefono='$Telefono',correo='$Correo',cantidad='$Cantidad',
-tipo='$Tipo',tamano='$Tamano',entrega='$Entrega' WHERE  id ='$id'" ;
+$consulta= "Update cliente set id='$id' nombre='$Nombre', apellidos='$Apellidos', direccion='$Direccion',telefono='$Telefono',correo='$Correo',cantidad='$Cantidad',
+tipo='$Tipo',tamano='$Tamano', entrega='$Entrega', pago='$Pago' WHERE  id='$id'" ;
 $consulta = $con -> prepare($consulta);
 $consulta -> execute();
 $consulta->closeCursor();
