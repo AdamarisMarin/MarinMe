@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-    $('#btnConsultar').click(function() {
-          let varid =prompt('Ingrese el id del cliente');
-          $.post('Consulta.php',{idC:varid},function(data){
-          refrescar(data);
-          },'json');
-    });
+   $('#btnConsultar').click(function() {
+    let varid =prompt('Ingrese el id del cliente');      
+    $.post('Consulta.php',{idC:varid},function(data){
+      refrescar(data);
+      },'json');
+    });    
   
     function refrescar(reg){ 
     document.getElementById("idC").value=reg.id;
@@ -32,7 +32,11 @@ $(document).ready(function() {
     let Tamano = $("#idTamano").val();
     let Entrega = $("#idEntrega").val();
     let Pago = $("#idPago").val();
-
+    Swal.fire(
+      '¡Registro!',
+      'Cliente registrado correctamente',
+      'success'
+    )
     $.post('Registrar.php',{id:id,Nombre:Nombre,Apellidos:Apellidos,Direccion:Direccion,Telefono:Telefono,Correo:Correo,Cantidad:Cantidad,Tipo:Tipo,Tamano:Tamano,Entrega:Entrega,Pago:Pago});
 });
   
@@ -51,8 +55,8 @@ $('#btnModificar').click(function() {
     let Pago = $("#idPago").val();
   
     Swal.fire({
-          title:'Estas seguro de aplicar los cambios?',
-          text: "Esto no se puede revertir",
+          title:'¿Estas seguro de guardar los cambios?',
+          //text: "",
           icon: 'warning',
           showCancelButton: true,
           confirmButtonColor: '#3085d6',
@@ -63,19 +67,20 @@ $('#btnModificar').click(function() {
         }).then((result) => {
           if (result.isConfirmed) {
             Swal.fire(
-              'Cambios aplicados!',
-              'Los cambios al registro han sido guardados',
+              '¡Registro Modificado!',
+              'Los cambios se han guardado correctamente',
               'success'
             )
             $.post('Modificar.php',{idC:varid,Nombre:Nombre,Apellidos:Apellidos,Direccion:Direccion,Telefono:Telefono,Correo:Correo,Cantidad:Cantidad,Tipo:Tipo,Tamano:Tamano,Entrega:Entrega,Pago:Pago});
           }
     })
   });
-  $('#btnBorrar').click(function() {
-    let varid = $('#idC').val();
+
+  $('#btnBorrar').click(function() {   
+      let varid =prompt('Ingrese el id del cliente');  
          Swal.fire({
-          title: 'Estas seguro?',
-          text: "Esto no se puede revertir",
+          title: '¿Estas seguro de eliminar el registro?',
+          //text: "",
           icon: 'warning',
           showCancelButton: true,
           confirmButtonColor: '#3085d6',
@@ -85,8 +90,8 @@ $('#btnModificar').click(function() {
         }).then((result) => {
           if (result.isConfirmed) {
             Swal.fire(
-              'Eliminado!',
-              'El registro ha sido eliminado',
+              'Registro Eliminado!',
+              'El registro se ha eliminado correctamente',
               'success'
             )
             $.post('Borrar.php',{idC:varid});
