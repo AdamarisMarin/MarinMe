@@ -38,7 +38,7 @@ $(document).ready(function() {
   
 $('#btnModificar').click(function() {
 
-    let id = $("#idC").val();
+    let varid = $('#idC').val();
     let Nombre = $("#idNombre").val();
     let Apellidos = $("#idApellidos").val();
     let Direccion = $("#idDireccion").val();
@@ -67,7 +67,7 @@ $('#btnModificar').click(function() {
               'Los cambios al registro han sido guardados',
               'success'
             )
-            $.post('Modificar.php',{id:id,Nombre:Nombre,Apellidos:Apellidos,Direccion:Direccion,Telefono:Telefono,Correo:Correo,Cantidad:Cantidad,Tipo:Tipo,Tamano:Tamano,Entrega:Entrega,Pago:Pago});
+            $.post('Modificar.php',{idC:varid,Nombre:Nombre,Apellidos:Apellidos,Direccion:Direccion,Telefono:Telefono,Correo:Correo,Cantidad:Cantidad,Tipo:Tipo,Tamano:Tamano,Entrega:Entrega,Pago:Pago});
           }
     })
   });
@@ -93,4 +93,4 @@ $('#btnModificar').click(function() {
           }
     })    
     });
-  });
+});
