@@ -51,7 +51,7 @@ font-family: Arial black;
     font-family: Arial black;
 }
 
-#btnIngresar
+#btnRegistrar
 {
     padding: 5px 5px;
     background-color: rgb(255, 59, 92); 
@@ -95,7 +95,7 @@ font-family: Arial black;
     font-size: 18px; 
 }
 
-#btnBorrar
+#btnEliminar
 {
     padding: 5px 5px;
     background-color: rgb(255, 59, 92); 

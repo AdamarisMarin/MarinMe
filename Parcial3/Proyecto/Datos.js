@@ -1,26 +1,6 @@
 $(document).ready(function() {
 
-   $('#btnConsultar').click(function() {
-    let varid =prompt('Ingrese el id del cliente');      
-    $.post('Consulta.php',{idC:varid},function(data){
-      refrescar(data);
-      },'json');
-    });    
-  
-    function refrescar(reg){ 
-    document.getElementById("idC").value=reg.id;
-    document.getElementById("idNombre").value=reg.nombre;
-    document.getElementById("idApellidos").value=reg.apellidos;
-    document.getElementById("idDireccion").value=reg.direccion;
-    document.getElementById("idTelefono").value=reg.telefono;
-    document.getElementById("idCorreo").value=reg.correo;
-    document.getElementById("idCantidad").value=reg.cantidad;
-    document.getElementById("idTipo").value=reg.tipo;
-    document.getElementById("idTamano").value=reg.tamano;
-    document.getElementById("idEntrega").value=reg.entrega;
-    document.getElementById("idPago").value=reg.pago;
-  }
-  $('#btnIngresar').click(function() {
+  $('#btnRegistrar').click(function() {
     let id = $("#idC").val();
     let Nombre = $("#idNombre").val();
     let Apellidos = $("#idApellidos").val();
@@ -33,12 +13,33 @@ $(document).ready(function() {
     let Entrega = $("#idEntrega").val();
     let Pago = $("#idPago").val();
     Swal.fire(
-      '¡Registro!',
-      'Cliente registrado correctamente',
+      '¡Cliente Registrado!',
+      'El cliente se ha registrado correctamente',
       'success'
     )
     $.post('Registrar.php',{id:id,Nombre:Nombre,Apellidos:Apellidos,Direccion:Direccion,Telefono:Telefono,Correo:Correo,Cantidad:Cantidad,Tipo:Tipo,Tamano:Tamano,Entrega:Entrega,Pago:Pago});
 });
+
+$('#btnConsultar').click(function() {
+  let varid =prompt('Ingrese el id del cliente');      
+  $.post('Consulta.php',{idC:varid},function(data){
+    refrescar(data);
+    },'json');
+  });    
+
+  function refrescar(reg){ 
+  document.getElementById("idC").value=reg.id;
+  document.getElementById("idNombre").value=reg.nombre;
+  document.getElementById("idApellidos").value=reg.apellidos;
+  document.getElementById("idDireccion").value=reg.direccion;
+  document.getElementById("idTelefono").value=reg.telefono;
+  document.getElementById("idCorreo").value=reg.correo;
+  document.getElementById("idCantidad").value=reg.cantidad;
+  document.getElementById("idTipo").value=reg.tipo;
+  document.getElementById("idTamano").value=reg.tamano;
+  document.getElementById("idEntrega").value=reg.entrega;
+  document.getElementById("idPago").value=reg.pago;
+}
   
 $('#btnModificar').click(function() {
 
@@ -59,9 +60,9 @@ $('#btnModificar').click(function() {
           //text: "",
           icon: 'warning',
           showCancelButton: true,
-          confirmButtonColor: '#3085d6',
+          confirmButtonColor: '#8df505',
           cancelButtonColor: '#d33',
-          confirmButtonText: 'Aplicar',
+          confirmButtonText: 'Guardar',
           cancelButtonText:'Cancelar'
   
         }).then((result) => {
@@ -76,25 +77,25 @@ $('#btnModificar').click(function() {
     })
   });
 
-  $('#btnBorrar').click(function() {   
+  $('#btnEliminar').click(function() {   
       let varid =prompt('Ingrese el id del cliente');  
          Swal.fire({
           title: '¿Estas seguro de eliminar el registro?',
           //text: "",
           icon: 'warning',
           showCancelButton: true,
-          confirmButtonColor: '#3085d6',
+          confirmButtonColor: '#8df505',
           cancelButtonColor: '#d33',
           confirmButtonText: 'Eliminar',
           cancelButtonText:'Cancelar'
         }).then((result) => {
           if (result.isConfirmed) {
             Swal.fire(
-              'Registro Eliminado!',
+              '¡Registro Eliminado!',
               'El registro se ha eliminado correctamente',
               'success'
             )
-            $.post('Borrar.php',{idC:varid});
+            $.post('Eliminar.php',{idC:varid});
           }
     })    
     });
